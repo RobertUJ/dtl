@@ -1,0 +1,21 @@
+{% extends "main/main.html" %}
+
+{% block title %}Account register{% endblock title %}
+
+{% block content %}
+
+<div class="content">
+	<div class="row">
+		<div class="span12">
+			
+			<form action="" method="POST" name="frmRegister" id='id_frmRegister'>
+				{% csrf_token %}
+				{{ form.as_p }}					
+				<input type="submit" value="Register User">
+			</form>
+
+		</div>
+	</div>
+</div>
+	
+{% endblock content %}
